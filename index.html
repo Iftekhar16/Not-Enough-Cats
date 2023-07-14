@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Cats lol</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                color1: '#749da1',
+                color2: '#b4be89',
+                color3: '#e0be99',
+                color4: '#eb9191',
+                color5: '#424c51',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-color3">
+    <div class="cat-container w-full h-72 flex justify-center items-center">
+        <input class="w-1/2 h-10 rounded-full bg-color4 border border-color5 text-color5 focus:border-0 focus:outline-none" id="cat-number" type="text" placeholder="How many cats are too many cats?">
+        <button class="px-5 h-10 rounded-full ml-2 py-full font-bold bg-color5 text-color4" id="go" onclick="doStuff()">GO!</button>
+    </div>
+
+    <div class="message text-center h-8 text-sm" id="message"></div>
+    
+    <div class="cat-images p-20" id="cat-images">
+        <div class="wrapper max-w-[65rem] mx-auto flex justify-center flex-wrap gap-5" id="wrapper">
+            <!-- ... -->
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
